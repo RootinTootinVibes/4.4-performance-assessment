@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classes from './Button.module.css';
 
 const Button = () => {
     const [clicks, setClicks] = useState(0);
@@ -12,8 +13,8 @@ const Button = () => {
     }
     return (
         <div>
-            <button onClick={handleIncrement}>Increase Count</button>
-            <button onClick={handleDecrement}>Decrease Count</button>
+            <button className={classes.button} onClick={handleIncrement}>Increase Count</button>
+            <button className={classes.button} onClick={handleDecrement}>Decrease Count</button>
             <p>Count Value: {clicks}</p>
         </div>
     );

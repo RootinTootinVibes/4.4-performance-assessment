@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import classes from './Button.module.css';
 
 function TodoList() {
     const [todos, setTodos] = useState([]);
@@ -27,7 +28,7 @@ function TodoList() {
                 {todos.map((todo, index) => (
                     <li key={index}>
                         {todo}
-                        <button onClick={() => handleDelete(index)}>Delete</button>
+                        <button className={classes.button} onClick={() => handleDelete(index)}>Delete</button>
                     </li>
                 ))}
             </ul>
