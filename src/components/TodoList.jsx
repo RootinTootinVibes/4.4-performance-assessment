@@ -23,7 +23,7 @@ function TodoList() {
     return (
         <div>
             <input type="text" value={inputValue} onChange={handleInputChange} />
-            <button onClick={handleSubmit}>Add Todo</button>
+            <button className={classes.button} onClick={handleSubmit}>Add Todo</button>
             <ul>
                 {todos.map((todo, index) => (
                     <li key={index}>
