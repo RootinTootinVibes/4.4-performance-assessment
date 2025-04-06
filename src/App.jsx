@@ -8,6 +8,7 @@ function App() {
   return (
       <div>
       <Counter />
+      <Counter />
       <br />
       <TextField />
       <br />
